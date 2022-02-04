@@ -12,6 +12,9 @@ Quick and dirty tutorials and templates
 
 
 
+# Speech Activity Detection
+`speech_activity_detection_pyannote.ipynb` detects and plots speech and silences using Pyannote package. You can use recordings in `data/input/audio_samples` to test [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/speech_activity_detection_pyannote.ipynb) 
+
 
 # Annotations
 
