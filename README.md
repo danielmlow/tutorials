@@ -1,7 +1,20 @@
+
+
+
+
+
 # Tutorials
 Quick and dirty tutorials and templates 
 
+# Automatic speech recognition (ASR)
+`asr.ipynb` uses SpeechBrain models 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/asr.ipynb)
+
+
+
+
 # Annotations
+
 
 `annotation.py` takes data from `./data/input/vfp_audios_16khz/` (just the first third of the speech task) dir and outputs a DF in `./data/outputs/annotations/` 
 
