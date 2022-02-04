@@ -5,6 +5,8 @@ Quick and dirty tutorials and templates
 
 `annotation.py` takes data from `./data/input/vfp_audios_16khz/` (just the first third of the speech task) dir and outputs a DF in `./data/outputs/annotations/` 
 
+Obtain `vfp_audios_16khz/` cannot be shared. Ask for it. 
+
 After verifying the paths and instructions in the first few lines, run:
 ```
 pip3 install playsound PyObjC pandas 
