@@ -1,6 +1,7 @@
 
 
-./data/input/vfp_audios_16khz/*
+data/input/vfp_audios_16khz/*
+data/input/vfp_audios_16khz.zip
 
 .DS_Store
 

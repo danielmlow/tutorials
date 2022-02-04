@@ -1,4 +1,4 @@
-# tutorials
+# Tutorials
 Quick and dirty tutorials and templates 
 
 # Annotations
@@ -13,6 +13,8 @@ pip3 install playsound PyObjC pandas
 python3 annotation.py
 ```
 
+### Colab option
+`annotation.ipynb` is a Colab approach. when you use `display.display(display.Audio(path))` in jupyter you can't include a input() in the next line. So this is an alternative approach where all audio files are listed  and one can splitscreen and manually label with a spreadsheet. 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/annotation.ipynb)
 
-`annotation.ipynb` is a Colab approach. when you use `display.display(display.Audio(path))` in jupyter you can't include a input() in the next line. So this an alternative where all audio files are placed there. and one could splitscreen and manually label with a spreadsheet. 
 
