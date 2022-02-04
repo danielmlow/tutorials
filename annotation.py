@@ -13,7 +13,7 @@ from playsound import playsound
 from scipy.io import wavfile
 
 # config
-data_dir = 'vfp_audios_16khz'
+data_dir = 'vfp_audios_16khz' #used to name the output file as well
 input_dir = f'./data/input/{data_dir}/'
 output_dir = './data/output/annotations/'
 instructions = '1=if volume is very low; 2=normal; 3=gain was likely raised; 99=unsure; r=repeat; q=save and quit. Or instead type in a note here: '
@@ -30,7 +30,7 @@ seed = 123
 random.Random(seed).shuffle(files) ## shuffle order of files with seed so that if you quit in the middle, you can continue where you left off
 annotation = []
 lengths = []
-for i, file_i in enumerate(files[:5]):
+for i, file_i in enumerate(files):
   # get length
   samplerate, data = wavfile.read(input_dir+file_i) 
   length = np.round(data.shape[0]/samplerate,1)
