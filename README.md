@@ -6,6 +6,14 @@
 # Tutorials
 Quick and dirty tutorials and templates 
 
+# Downsample sampling rate 
+Most speech occurs below 8kHz. Therefore downsampling to 16kHz is enough to capture most speech-related frequencies and information (see Nyquist rate). Many algorithms require samples to be at 16kHz (for faster processing or normalization across samples) while many recordings are done at 22 or 44kHz.
+
+```
+sh downsample_16khz.sh
+```
+
+
 # Automatic speech recognition (ASR)
 `asr.ipynb` uses SpeechBrain models 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/asr.ipynb)
@@ -34,5 +42,7 @@ python3 annotation.py
 ### Colab option
 `annotation.ipynb` is a Colab approach. when you use `display.display(display.Audio(path))` in Jupyter you can't include a input() in the next line. So this is an alternative approach where all audio files are listed  and one can splitscreen and manually label with a spreadsheet. 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/annotation.ipynb)
+
+
 
 
