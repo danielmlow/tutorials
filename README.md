@@ -23,9 +23,10 @@ Quick and dirty tutorials and templates
 
 Obtain `vfp_audios_16khz/` cannot be shared. Ask for it. 
 
-After verifying the paths and instructions in the first few lines, run:
+After verifying the configuration (paths, instructions, how many seconds to play) in the first few lines, run:
+
 ```
-pip3 install playsound PyObjC pandas 
+pip3 install playsound PyObjC pandas pyaudio
 python3 annotation.py
 ```
 
