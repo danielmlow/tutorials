@@ -1,6 +1,6 @@
 
-input_dir="./data/input/audio_samples_48khz/"
-output_dir="./data/input/audios_16khz/" 
+input_dir="./data/input/qualitative_interview_2022_02_07_wav/"
+output_dir="./data/input/qualitative_interview_2022_02_07_wav_16/" 
 files_to_find="*.wav"
 downsample_to=16000
 

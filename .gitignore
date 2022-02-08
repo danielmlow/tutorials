@@ -2,6 +2,7 @@
 
 data/input/vfp_audios_16khz/*
 data/input/vfp_audios_16khz.zip
+data/input/qualitative_interview*
 
 .DS_Store
 
