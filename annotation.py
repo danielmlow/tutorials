@@ -31,8 +31,6 @@ args = parser.parse_args()
 input_dir = args.input_dir
 output_dir = args.output_dir
 filter = args.filter
-print(filter)
-print(type(filter))
 instructions = args.instructions
 play_n_seconds = args.play_n_seconds
 continue_from_file_n = args.continue_from_file_n
