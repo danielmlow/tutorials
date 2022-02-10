@@ -113,6 +113,8 @@ if __name__ == '__main__':
     annotation = []
     lengths = []
     for i, file_i in enumerate(files):
+      if continue_from_file_n:
+        i+=continue_from_file_n
       # get length
       samplerate, data = wavfile.read(input_dir+file_i) 
       length = np.round(data.shape[0]/samplerate,1)
@@ -120,11 +122,11 @@ if __name__ == '__main__':
       if resp == 'q':
         break
       else:
-        annotation.append([file_i, resp, ])
+        annotation.append([i, file_i, resp, ])
       print('\n')
 
     # create DF
-    annotation = pd.DataFrame(annotation, columns = ['file', 'annotation'])
+    annotation = pd.DataFrame(annotation, columns = ['i','file', 'annotation'])
     ts = datetime.datetime.utcnow().strftime('%y-%m-%dT%H-%M-%S')
     output_filename = input_dir.split('/')[-2] 
     annotation.to_csv(output_dir+f'annotations_{output_filename}_{ts}.csv')
