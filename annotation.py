@@ -16,13 +16,14 @@ from scipy.io import wavfile
 import argparse
 
 # Create the parser
-parser = argparse.ArgumentParser(description='Annotate files in input_dir according to your instructios argument and output a csv')
+parser = argparse.ArgumentParser(description='Annotate files in input_dir according to your instructios argument and output a csv. Filenames are not shown to not bias annotator. Files are in random order, but always the same so you can continue where you left off after saving. ')
 # Add an argument
 parser.add_argument('--input_dir', type=str, required=True, help = 'for instance: data/input/audios_16khz/')
 parser.add_argument('--output_dir', type=str, required=True, help = 'will create if doesnt exist, for instance: data/output/annotations/')
 parser.add_argument('--filter', type=str, default=None, help = 'keep files that include this string, for instance: Speech_1')
 parser.add_argument('--instructions', type=str,default='1=if volume is very low; 2=normal; 3=gain was likely raised; 99=unsure; r=repeat; q=save and quit. Or instead type in a note here:', help='default is: 1=if volume is very low; 2=normal; 3=gain was likely raised; 99=unsure; r=repeat; q=save and quit. Or instead type in a note here:')
 parser.add_argument('--play_n_seconds', type=int,default=5, help='int to pay int sec or 0 to play full, play first n seconds in case files are long. Default is 5.')
+parser.add_argument('--continue_from_file_n', type=int,default=0, help='if you already labelled n files and saved the annotation, continue from there.')
 
 
 # Parse the argument
@@ -34,7 +35,7 @@ print(filter)
 print(type(filter))
 instructions = args.instructions
 play_n_seconds = args.play_n_seconds
-
+continue_from_file_n = args.continue_from_file_n
 
 def play_partial_sound(path_to_wav, start = 0, play_n_seconds = play_n_seconds):
   # https://stackoverflow.com/questions/18721780/play-a-part-of-a-wav-file-in-python
@@ -63,6 +64,27 @@ def play_partial_sound(path_to_wav, start = 0, play_n_seconds = play_n_seconds):
   wave_file.close()
   return
 
+
+def play_and_get_response(file_i,i, instructions=None, play_n_seconds=None, length=None):
+  # recursive function
+    if play_n_seconds: 
+        # play partial
+        print(f'======= file #{i}, {length} sec, playing first {play_n_seconds} sec ...')
+        play_partial_sound(input_dir+file_i, start = 0, play_n_seconds = play_n_seconds)
+    else:
+        # play full
+        print(f'======= playing file #{i}, {length} sec ...')
+        playsound(input_dir+file_i) #play audio
+    resp = input(instructions) #record annotation
+    if resp != 'r':
+        return resp
+    else:
+      return play_and_get_response(file_i,i, instructions=instructions, play_n_seconds=play_n_seconds, length=length)
+
+    
+
+
+
 if __name__ == '__main__':
     
     try:
@@ -77,6 +99,10 @@ if __name__ == '__main__':
         pass
     if filter:
       files = [n for n in files if filter in n] #just keep first sample of Speech for each participant
+    
+    if continue_from_file_n:
+      files = files[continue_from_file_n:]
+    
     print(len(files), 'files')
     # print('avg. length 6.8 sec +- 5.4 sec')
     print(instructions+'\n')
@@ -90,27 +116,8 @@ if __name__ == '__main__':
       # get length
       samplerate, data = wavfile.read(input_dir+file_i) 
       length = np.round(data.shape[0]/samplerate,1)
-      if play_n_seconds: 
-        # play partial
-        print(f'======= file #{i}, {length} sec, playing first {play_n_seconds} sec ...')
-        play_partial_sound(input_dir+file_i, start = 0, play_n_seconds = play_n_seconds)
-      else:
-        # play full
-        print(f'======= playing file #{i}, {length} sec ...')
-        playsound(input_dir+file_i) #play audio
-      resp = input(instructions) #record annotation
-      if resp == 'r':
-        if play_n_seconds: 
-          # play partial
-          print(f'======= file #{i}, {length} sec, playing first {play_n_seconds} sec ...')
-          play_partial_sound(input_dir+file_i, start = 0, play_n_seconds = play_n_seconds)
-        else:
-          # play full
-          print(f'======= playing file #{i}, {length} sec ...')
-          playsound(input_dir+file_i) #play audio
-        
-
-      elif resp == 'q':
+      resp = play_and_get_response(file_i,i, instructions=instructions, play_n_seconds=play_n_seconds, length=length)
+      if resp == 'q':
         break
       else:
         annotation.append([file_i, resp, ])
@@ -121,4 +128,7 @@ if __name__ == '__main__':
     ts = datetime.datetime.utcnow().strftime('%y-%m-%dT%H-%M-%S')
     output_filename = input_dir.split('/')[-2] 
     annotation.to_csv(output_dir+f'annotations_{output_filename}_{ts}.csv')
+    
+    
+
 
