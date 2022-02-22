@@ -8,7 +8,7 @@ Quick and dirty tutorials and templates
 
 
 # dump / load json files
-`load_write_json.ipynb`
+`load_write_json.ipynb` [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/load_write_json.ipynb) 
 
 # Convert mp3 to other format
 pip3 install pydub
