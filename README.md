@@ -59,3 +59,8 @@ brew install rename
 rename 's/cleaned/16khz/' *.wav
 ```
 
+
+# Speech-shaped noise
+
+`speech_shaped_noise.ipynb` As a control for speech. 
+
