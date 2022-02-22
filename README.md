@@ -7,6 +7,9 @@
 Quick and dirty tutorials and templates 
 
 
+# dump / load json files
+`load_write_json.ipynb`
+
 # Convert mp3 to other format
 pip3 install pydub
 python3 convert_mp3.py --input_dir='data/input/ --output_dir= --output_format=wav --output_bitrate=32k
