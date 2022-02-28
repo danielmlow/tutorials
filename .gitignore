@@ -3,6 +3,10 @@
 data/input/vfp_audios_16khz/*
 data/input/vfp_audios_16khz.zip
 data/input/qualitative_interview*
+data/input/audio_samples/oprah_megan.wav
+data/input/mp3/oprah_megan.mp3
+email_send.py
+email_content.py
 
 .DS_Store
 

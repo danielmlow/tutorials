@@ -47,7 +47,7 @@ python3 annotation.py --input_dir=data/input/vfp_audios_16khz/ --output_dir=data
 ```
 
 
-#### Colab option
+#### Annotations - Colab option
 `annotation.ipynb` is a Colab approach. 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/annotation.ipynb)
 
@@ -62,5 +62,11 @@ rename 's/cleaned/16khz/' *.wav
 
 # Speech-shaped noise
 
-`speech_shaped_noise.ipynb` As a control for speech. 
+`speech_shaped_noise.ipynb` As a control for speech. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/speech_shaped_noise.ipynb)
+
+
+# Extract OpenSmile eGeMAPS features
+`extract_opensmile_features.ipynb` [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/extract_opensmile_features.ipynb)
+
+
 
