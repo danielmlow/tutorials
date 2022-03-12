@@ -35,7 +35,7 @@ instructions = args.instructions
 play_n_seconds = args.play_n_seconds
 continue_from_file_n = args.continue_from_file_n
 
-def play_partial_sound(path_to_wav, start = 0, play_n_seconds = play_n_seconds):
+def play_partial_sound(path_to_wav, start = 0, play_n_seconds = 3):
   # https://stackoverflow.com/questions/18721780/play-a-part-of-a-wav-file-in-python
   # open wave file
   wave_file = wave.open(path_to_wav, 'rb')

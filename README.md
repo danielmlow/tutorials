@@ -10,6 +10,44 @@ Quick and dirty tutorials and templates
 # dump / load json files
 `load_write_json.ipynb` [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/load_write_json.ipynb) 
 
+
+
+# Rename files
+
+```
+brew install rename
+rename 's/cleaned/16khz/' *.wav
+```
+
+# Send emails
+
+1. First create a script called `email_config.py` with these variables using your info:
+
+```python
+port = 465  #For SSL. eg, 465 
+smtp_server = "outgoing.mit.edu" #eg, "outgoing.mit.edu" with the "outgoing" part
+from_email_actual = "username"  # actual email sent by. just the username of the above email. eg., "username@mit.edu"
+from_email_appears = "other_username@mit.edu"  # It will appeared as sent by this email "other_username@mit.edu" or it could be the same one as from_email_actual. You need authorization to send from other emails which you can configure in your email settings. 
+also_send_to = ['username@gmail.com', 'other_username2@mit.edu']  # you can Add email to receive copy or leave empty list, but note some .edu accounts cannot send to themselves. These emails will not be seen by recipient. 
+cc = None # This will appear, but note some .edu accounts cannot send to themselves
+testing = True #send the emails to the email specified in testing_to_email to test everything is running well and the html formatting looks right. 
+testing_to_email = 'daniel.m.low@gmail.com'
+testing_append_subject_line = '[Test] '
+```
+
+2. `email_content.py` Here you define the email subject line and body of the different types of emails. Use HTML (e.g., `<br>` for line breaks, etc.).
+
+3. Define a CSV file with emails and email_type. This will allow `email_send.py` to call extract certain body and subject lines from `email_content.py`. You will call this csv file in the argument, see below. In my example, include columns `to_email`, `name`, `email_type`, and `prizes`, but you can include whatever you need and change in `email_content.py` accordingly.
+
+4. Run script
+
+This will prompt you for the password of from_email_actual
+```
+python3 email_send.py --path_to_dataframe=path/to/dataframe.csv
+```
+
+
+
 # Convert mp3 to other format
 pip3 install pydub
 python3 convert_mp3.py --input_dir='data/input/ --output_dir= --output_format=wav --output_bitrate=32k
@@ -52,12 +90,6 @@ python3 annotation.py --input_dir=data/input/vfp_audios_16khz/ --output_dir=data
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/annotation.ipynb)
 
 
-# Rename files
-
-```
-brew install rename
-rename 's/cleaned/16khz/' *.wav
-```
 
 
 # Speech-shaped noise
