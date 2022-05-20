@@ -7,6 +7,11 @@
 Quick and dirty tutorials and templates 
 
 
+# Template files
+- `template.ipynb` [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/template.ipynb) 
+- `template.py`
+
+<br>
 # Plotting and input/output in `plotting_and_io/`
 
 ## Save static Plotly images in Colab
