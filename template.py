@@ -37,5 +37,3 @@ if __name__ == '__main__':
         pass
     for n in files:
         convert_mp3(input_dir+n,output_dir+n[:-3]+output_format, output_format=output_format )
-
-
