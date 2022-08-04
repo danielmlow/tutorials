@@ -103,8 +103,7 @@ sh downsample_16khz.sh
 
 #### Annotations - Colab option
 `audio_annotation.ipynb` is a Colab approach. 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/speech/annotation.ipynb)
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/speech/audio_annotation.ipynb)
 
 #### Annotations - CLI option
 `audio_annotation.py` takes data from `./data/input/vfp_audios_16khz/` (just the first third of the speech task) dir and outputs a DF in `./data/outputs/annotations/` 
