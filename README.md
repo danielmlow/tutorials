@@ -129,6 +129,15 @@ python3 annotation.py --input_dir=data/input/vfp_audios_16khz/ --output_dir=data
 
 
 
+# Machine learing in `machine_learning/`
+
+`classifier.ipynb`
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/machine_learning/classifier.ipynb)
+
+
+
+
+
 
 
 
