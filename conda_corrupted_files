@@ -1,0 +1,31 @@
+
+
+error_log = '''
+CondaVerificationError: The package for kiwisolver located at /Users/danielmlow/miniconda3/pkgs/kiwisolver-1.4.4-py310ha23aa8a_1
+appears to be corrupted. The path 'lib/python3.10/site-packages/kiwisolver/__pycache__/__init__.cpython-310.pyc'
+specified in the package manifest cannot be found.
+
+CondaVerificationError: The package for markupsafe located at /Users/danielmlow/miniconda3/pkgs/markupsafe-2.1.3-py310h6729b98_0
+appears to be corrupted. The path 'lib/python3.10/site-packages/markupsafe/__pycache__/__init__.cpython-310.pyc'
+specified in the package manifest cannot be found.
+
+'''
+
+import numpy as np
+import subprocess
+import os
+
+error_log = error_log.split('located at ')
+
+error_log = [n.split('\nappears')[0] for n in error_log if '/Users' in n]
+error_log = np.unique(a)
+
+# erase all corrupted files
+for n in error_log:
+    subprocess.run(["rm", "-rf", n]) 
+    
+env_name = 'rallypoint_stb_semantic'
+env_name_path = '/Users/danielmlow/miniconda3/envs/'+env_name
+subprocess.run(["rm", "-rf", env_name_path]) 
+
+
