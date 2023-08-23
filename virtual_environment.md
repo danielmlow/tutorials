@@ -1,6 +1,8 @@
 
 # How to create a conda virtual environment
 
+Install miniconda (usually pkg version is easiest): https://docs.conda.io/en/latest/miniconda.html 
+
 In a terminal, run the following replacing env_name to something meaningful for this project (I recommend short names because you will be typing it a lot): 
 
 `conda create -n env_name python=3.9 pandas numpy scikit-learn seaborn matplotlib jupyterlab`
