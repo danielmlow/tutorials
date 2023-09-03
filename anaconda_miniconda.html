@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Daniel M. Low">
+
+<title>Virtual environments, Anaconda and miniconda</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="virtual_environments_files/libs/clipboard/clipboard.min.js"></script>
+<script src="virtual_environments_files/libs/quarto-html/quarto.js"></script>
+<script src="virtual_environments_files/libs/quarto-html/popper.min.js"></script>
+<script src="virtual_environments_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="virtual_environments_files/libs/quarto-html/anchor.min.js"></script>
+<link href="virtual_environments_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="virtual_environments_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="virtual_environments_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="virtual_environments_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="virtual_environments_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Virtual environments, Anaconda and miniconda</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Daniel M. Low </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>TL;DR:</p>
+<ul>
+<li>You can start playing around with python using Google Colab <a href="https://colab.research.google.com/">https://colab.research.google.com/</a> and choose <code>New notebook</code>. You can install packages Colab doesn’t have using <code>!pip install package_name</code></li>
+<li>Eventually you’ll want to download an interactive development environment (IDE) like Spyder, VScode, or pycharm and use package manager, either anaconda or miniconda, don’t install both as it will mess up operability.</li>
+<li>make sure you can import theses packages:</li>
+</ul>
+<pre><code>import statsmodels.api as sm
+import pydataset
+import sklearn
+import seaborn as sns
+import matplotlib.pyplot as plt 
+import xgboost
+</code></pre>
+<section id="virtual-environments-anaconda-or-miniconda" class="level1">
+<h1>Virtual environments (anaconda or miniconda)</h1>
+<hr>
+<ul>
+<li>Different code might need different package versions. You might need to upgrade or downgrade package A so package B works (since perhaps it was created using the an older version of package A). Once everything is working, you save all versions in a requirements.txt file so others can recreate virtual environment and run code without issues.</li>
+<li>Each project or even some individual analysis within a project should have its own.</li>
+<li>Someone may not be able to reproduce because differences OS could cause issues with installations.</li>
+<li>This can all be done through miniconda.</li>
+<li>To avoid doing all this (which is easy to do once you learn how), you can just download a distribution of thousands of packages that are guaranteed to work together called Anaconda Distribution. You can also manage install new packages and create virtual environments using the graphical interface called Anaconda Navigator, which may be better for beginners.</li>
+</ul>
+<section id="running-python-for-beginners-anaconda" class="level3">
+<h3 class="anchored" data-anchor-id="running-python-for-beginners-anaconda">Running Python for beginners (anaconda)</h3>
+<p>For first-time users, Anaconda provides many packages pre-installed and a navigator interface for installing an IDEA and new packages that’s easy to use.</p>
+<ol type="1">
+<li>Install Anaconda for your operating system: https://docs.anaconda.com/free/anaconda/install/</li>
+<li>Anaconda Navigator will prompt you to sign in. You don’t need to sign in to use and I had trouble creating an account. But if you want, create an account and sign in.</li>
+<li>Install and then launch Spyder.</li>
+<li>By default, packages installed using your terminal will be installed to your base (root) environment. You can install packages using Anaconda Navigator https://docs.anaconda.com/free/navigator/tutorials/manage-packages/#installing-a-package</li>
+</ol>
+</section>
+<section id="minimal-virtual-environments-miniconda" class="level3">
+<h3 class="anchored" data-anchor-id="minimal-virtual-environments-miniconda">Minimal virtual environments (miniconda)</h3>
+<ol type="1">
+<li>Install miniconda (pkg is easiest): https://docs.conda.io/en/latest/miniconda.html#latest-miniconda-installer-links</li>
+<li>In a terminal or console, run the following replacing setting your environment name after the <code>-n</code> argument to something meaningful for this project (I recommend short names because you will be typing it a lot). Here I’ll choose <code>ml</code>:</li>
+</ol>
+<p><code>conda create -y -n ml python=3.10 pandas numpy scikit-learn seaborn matplotlib xgboost pydataset</code></p>
+<p>To use:</p>
+<p><code>conda activate ml</code> # activate each time you start a new terminal so that you’re operating inside the virtual environment</p>
+<p><code>conda install -y jupyterlab</code> # install another package with conda.</p>
+<p><strong>Use pip installer if package not available on conda</strong></p>
+<p>Install additional packages: <code>pip install pydataset spyder-kernels==2.4.*</code> # install other packages. spyder-kernels is needed to use the virtual environment in Spyder IDE.</p>
+<p><code>pip install</code></p>
+<p>If for some reason you don’t have pip (it comes with anaconda and miniconda), in the terminal, install pip: <code>python -m ensurepip --upgrade</code>. More info<code>https://pip.pypa.io/en/stable/installation/</code></p>
+<p>Other commands:</p>
+<ul>
+<li>INFO (see which envs you have): <code>conda info --envs</code></li>
+<li>SIZE: <code>du -h -s $(conda info --base)/envs/*</code></li>
+<li>REMOVE: <code>conda remove --name env_name --all</code></li>
+<li>Clone another env: <code>conda create --name project2_name --clone project1_name</code></li>
+<li>Save package versions at the end of your project: <code>pip freeze &gt; requirements.txt</code></li>
+</ul>
+<p><strong>Change Python interpreter to your virtual environment</strong></p>
+<p><strong>Spyder.</strong> Then change Python interpreter in Spyder to your virtual environment. Go to Preferences &gt; Python Interpreter &gt; Use the following Python interpreter: <code>/Users/danielmlow/miniconda3/envs/psy2085/bin/python</code></p>
+<p><strong>PyCharm.</strong> Preferences &gt; Python Interpreter &gt; Virtual Env &gt; Existing + Make available to all projects</p>
+<p><strong>conda not found error</strong></p>
+<ul>
+<li>In the terminal: <code>open ~/.bash_profile</code> or <code>open ~/.bashrc</code></li>
+<li>Add the following line at the end of the file/s: <code>export PATH=~/miniconda3/bin:$PATH</code></li>
+<li>Save and close the file. Then, in the terminal, source the file to apply the changes: <code>source ~/.bashrc</code></li>
+<li>link conda to miniconda: <code>source ~/miniconda3/bin/activate</code></li>
+<li>tell your computer to launch conda from your shell <code>conda init bash</code> (assuming you’re using bash, if not check which one here: <code>ps -p $$</code>)</li>
+</ul>
+</section>
+<section id="keyboard-shortcuts-for-your-ide" class="level3">
+<h3 class="anchored" data-anchor-id="keyboard-shortcuts-for-your-ide">Keyboard shortcuts for your IDE</h3>
+<p>You might want to change keyboard shortcuts (cmd + ,) to match rStudio. For instance:</p>
+<ul>
+<li>run selection: cmd + enter</li>
+<li>toggle comment: cmd + /</li>
+<li>end of line: cmd + →</li>
+<li>start of line: cmd + ←</li>
+<li>next word: option + →</li>
+<li>previous word: option + ←</li>
+</ul>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
