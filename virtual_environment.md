@@ -5,7 +5,7 @@ Install miniconda (usually pkg version is easiest): https://docs.conda.io/en/lat
 
 In a terminal, run the following replacing env_name to something meaningful for this project (I recommend short names because you will be typing it a lot): 
 
-`conda create -n env_name python=3.9 pandas numpy scikit-learn seaborn matplotlib jupyterlab`
+`conda create -y -n env_name python=3.10 pandas numpy scikit-learn seaborn matplotlib jupyterlab`
 
 To use: 
 
