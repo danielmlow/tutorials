@@ -1,4 +1,7 @@
-### 
+### Promptify
+
+General purpose: works for many different NLP tasks and has defaulta prompts to start playing with. Can access Main Gen AI libraries OpenAI, ModelHub() for huggingface and others it says.
+
 - https://github.com/promptslab/Promptify
 - examples: https://github.com/promptslab/Promptify/blob/main/notebooks/examples.ipynb
 - classification: https://github.com/promptslab/Promptify/blob/main/notebooks/classification.ipynb
