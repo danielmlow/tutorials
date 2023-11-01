@@ -1,3 +1,7 @@
+# Test out OpenSource models on quick servers
+- Go to Arena (side-by-side) or Direct Chat: https://chat.lmsys.org/
+- This can help you decide if you want to try to get these running locally 
+
 ### Promptify
 
 General purpose: works for many different NLP tasks and has defaulta prompts to start playing with. Can access Main Gen AI libraries OpenAI, ModelHub() for huggingface and others it says.
