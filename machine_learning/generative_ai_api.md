@@ -2,16 +2,20 @@
 
 Options:
 
-NLP tasks: what tasks it tries to solve using generative AI. Many means it uses prompt templates to do classification, NER, topic modeling, summarization, etc. 
+- NLP tasks: what tasks it tries to solve using generative AI. Many means it uses prompt templates to do classification, NER, topic modeling, summarization, etc.
+- Provides prompts: some packages played around with prompts to give you a template for doing different tasks
+- Local vs. API: Can you download the model so the data doesn't go to their servers
+- Open source vs. proprietary: basically, free huggingface models vs. paid proprietary models accessed through an API
 
 
 | **Package**    | **NLP tasks**  | **Provides prompts** | **Local vs. API** | **Open source vs. proprietary** | **Advantages**                           | **Disadvantages**                                          |
 |----------------|----------------|----------------------|-------------------|---------------------------------|------------------------------------------|------------------------------------------------------------|
 | **Promptify**  | Many           | Yes                  | API (maybe local) | Both                            | Pre-configured prompts                   | Package is not well developed, tutorials will likely break |
 | **Skorch**     | Classification | No                   | Local             | Open source (Huggingface)       | Sklearn syntax and hyperparameter tuning | Only does classification                                   |
+| **LiteLLM**     | Generative AI | No                   | API               | All                             | Easy access to all APIs                 | Not sure use of Huggingface API is free                     |
 | **LangChain**  | Generative AI  | No                   | API               | Both                            | Ideal for deploying                      |                                                            |
-| **OpenLLM**    | Generative AI  | No                   | Both               | Open source (Huggingface)       |                                          | Tutorial didn't work for me                                |
-| **OpenAI API** | Many NLP tasks | No                   | API               | Proprietary                     | Easy to use                              | Only OpenAI models                                         |
+| **OpenLLM**    | Generative AI  | No                   | Both               | Open source (Huggingface)       | Ideal for deploying                                     | Tutorial didn't work for me                                |
+| **OpenAI API** | Many | No                   | API               | Proprietary                     | Easy to use                              | Only OpenAI models                                         |
 
 
 - If you want to use GPT-4 GPT-3.5 Turbo, you might just use OpenAI API. You'll have to pay a fraction of a cent per request.
