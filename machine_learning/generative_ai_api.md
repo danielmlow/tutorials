@@ -44,7 +44,6 @@ General purpose: works for many different NLP tasks and has defaulta prompts to 
 - topic modeling: https://github.com/promptslab/Promptify/blob/27a53fa8e8f2a4d90f887d06ece65a44466f873a/promptify/prompts/text2text/topic_modelling/topic_modeling_draft.jinja#L5
 
 ### Skorch: text classification with sklearn-style syntax 
--LangCh
 - Advantages: you can use sklearn functions like do GridSearchCV, predict_proba() etc. 
 - Disadvatanges: Only good for classification, not other NLP tasks
 
