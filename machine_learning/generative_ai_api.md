@@ -63,6 +63,16 @@ Most of the above packages can access OpenAI and other models, so check them out
 - Examples: https://platform.openai.com/examples
 - Code: https://github.com/openai/openai-cookbook/tree/main/examples
 - Prices: https://openai.com/pricing###language-models
+- Limits to requests: https://github.com/openai/openai-cookbook/blob/main/examples/How_to_handle_rate_limits.ipynb 
+
+### Replicate
+- Can run many different Gen AI (audio, text, text to image, etc) models.
+- https://replicate.com/meta/llama-2-70b-chat
+
+### Prompt engineering
+- https://replicate.com/blog/how-to-prompt-llama
+- Skorch let's you treat different prompts as a hyperparameter values that you can finetune.
+- https://app.promptify.com/
 
 ### Others
 
