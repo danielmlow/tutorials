@@ -18,22 +18,26 @@ Options:
 | **OpenAI API** | Many | No                   | API               | Proprietary                     | Easy to use                              | Only OpenAI models                                         |
 
 
-- If you want to use GPT-4 GPT-3.5 Turbo, you might just use OpenAI API. You'll have to pay a fraction of a cent per request.
+Summary: 
+- If you want to use GPT-4 GPT-3.5 Turbo, you might just use OpenAI API. You'll have to pay a fraction of a cent per request. But I recommend using LiteLLM since it gives you access to all APIs with the same code (just adding the corresponding API key).
 - If you want to use free open-source models and compare models you might want to use
   - skorch for text classification or
   - promptify for other NLP tasks
-  - Lama-2 70b is currently producing results similar to GPT-4; however, you'll have to figure out how to run it on a few GPUs
-  - Smaller and distilled models are available, but performance will decrease.
+  - They say Llama-2 70b HF is currently (11/3/2023) producing results similar to GPT-4; however, you'll have to figure out how to run it on a few GPUs
+  - Smaller and distilled models are available on huggingface [leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard), but performance will likely decrease for now.
 - If you want to download the model locally, use skorch or openLLM which will download huggingface.
 - If you want inspirations for prompts, go to https://github.com/promptslab/Promptify/tree/main/promptify/prompts/text2text
 
-### Test out open source models on quick servers
+### LiteLLM
+- Quick and easy way to access all APIs with the same code. Tools for deployment. 
+
+### Test out open-source models on quick servers
 - Go to Arena (side-by-side) or Direct Chat: https://chat.lmsys.org/
 - This can help you decide if you want to try to get these running locally 
 
 ### Promptify
 
-General purpose: works for many different NLP tasks and has defaulta prompts to start playing with. Can access Main Gen AI libraries OpenAI, ModelHub() for huggingface and others it says.
+The package is not well maintained. The beenfit is it provides many prompts to do many different NLP tasks. Can access Main Gen AI libraries OpenAI, `ModelHub()` for huggingface and others it says, however, getting ModelHub to run was tricky. You need to manually add model names to metadata.json within the task folder (e.g., `prompts/ner/metadata.json`)
 
 - https://github.com/promptslab/Promptify
 - examples: https://github.com/promptslab/Promptify/blob/main/notebooks/examples.ipynb
@@ -50,7 +54,6 @@ General purpose: works for many different NLP tasks and has defaulta prompts to 
 ### LangChain
 - Better for production/deployment
 - https://www.langchain.com/ 
-- Open
 
 ### OpenLLM: better for open-source querying
 - https://github.com/bentoml/OpenLLM
