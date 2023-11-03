@@ -18,6 +18,11 @@ Options:
 | **OpenAI API** | Many | No                   | API               | Proprietary                     | Easy to use                              | Only OpenAI models                                         |
 
 
+Leaderboards:
+- Open LLMs: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
+- Another huggingface one: https://llm-leaderboard.streamlit.app/
+- Proprietary LLMs (not sure it is up to date): https://paperswithcode.com/sota/multi-task-language-understanding-on-mmlu
+
 Summary: 
 - If you want to use GPT-4 GPT-3.5 Turbo, you might just use OpenAI API. You'll have to pay a fraction of a cent per request. But I recommend using LiteLLM since it gives you access to all APIs with the same code (just adding the corresponding API key).
 - If you want to use free open-source models and compare models you might want to use
