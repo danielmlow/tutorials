@@ -10,11 +10,15 @@ Options:
 
 | **Package**    | **NLP tasks**  | **Provides prompts** | **Local vs. API** | **Open source vs. proprietary** | **Advantages**                           | **Disadvantages**                                          |
 |----------------|----------------|----------------------|-------------------|---------------------------------|------------------------------------------|------------------------------------------------------------|
-| **Promptify**  | Many           | Yes                  | API (maybe local) | Both                            | Pre-configured prompts                   | Package is not well developed, tutorials will likely break |
-| **Skorch**     | Classification | No                   | Local             | Open source (Huggingface)       | Sklearn syntax and hyperparameter tuning | Only does classification                                   |
 | **LiteLLM**     | Generative AI | No                   | API               | All                             | Easy access to all APIs                 | Not sure use of Huggingface API is free                     |
+| **GPT4all**     | Generative AI | No                   | Local               | Open source (Huggingface)                             | Local and Private                 | Only uses Huggingface models which may not work well                     |
+
+| **scikit-llm**  | Many           | Yes                  | Both | Both                            | Pre-configured prompts for different tasks                   | Needs some toying around to just do simple requests, doesnt have gridsearchCV that skorch has |
+
+| **Skorch**     | Classification | No                   | Local             | Open source (Huggingface)       | Sklearn syntax and hyperparameter tuning | Only does classification                                   |
 | **LangChain**  | Generative AI  | No                   | API               | Both                            | Ideal for deploying                      |                                                            |
 | **OpenLLM**    | Generative AI  | No                   | Both               | Open source (Huggingface)       | Ideal for deploying                                     | Tutorial didn't work for me                                |
+| **Promptify**  | Many           | Yes                  | API (maybe local) | Both                            | Pre-configured prompts                   | Package is not well developed, tutorials will likely break |
 | **OpenAI API** | Many | No                   | API               | Proprietary                     | Easy to use                              | Only OpenAI models                                         |
 
 
@@ -24,21 +28,38 @@ Leaderboards:
 - Proprietary LLMs (not sure it is up to date): https://paperswithcode.com/sota/multi-task-language-understanding-on-mmlu
 
 Summary: 
-- If you want to use GPT-4 GPT-3.5 Turbo, you might just use OpenAI API. You'll have to pay a fraction of a cent per request. But I recommend using LiteLLM since it gives you access to all APIs with the same code (just adding the corresponding API key).
+- If you want to use GPT-4 GPT-3.5 Turbo, you might just use OpenAI API. You'll have to pay a fraction of a cent per request. But I recommend using LiteLLM since it gives you access to all APIs with the same code (just adding the corresponding API key) so you can compare APIs (e.g., OpenAI vs Google vs Cohere, etc).
 - If you want to use free open-source models and compare models you might want to use
-  - skorch for text classification or
-  - promptify for other NLP tasks
+  - gpt4all for prompts
+  - scikit-llm for text classification (zero-shot, multilabel, etc) and summarization, vectors, and finetuning
+  - skorch just for text classification (but with gridsearchCV option)
+  - promptify has some additional prompts, but the package is not well maintained (tutorials haven't been updated)
   - They say Llama-2 70b HF is currently (11/3/2023) producing results similar to GPT-4; however, you'll have to figure out how to run it on a few GPUs
   - Smaller and distilled models are available on huggingface [leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard), but performance will likely decrease for now.
 - If you want to download the model locally, use skorch or openLLM which will download huggingface.
 - If you want inspirations for prompts, go to https://github.com/promptslab/Promptify/tree/main/promptify/prompts/text2text
 
 ### LiteLLM
-- Quick and easy way to access all APIs with the same code. Tools for deployment. 
+- Quick and easy way to access all APIs with the same code. Tools for deployment.
 
 ### Test out open-source models on quick servers
 - Go to Arena (side-by-side) or Direct Chat: https://chat.lmsys.org/
 - This can help you decide if you want to try to get these running locally 
+
+## GPT4all
+- https://github.com/nomic-ai/gpt4all/blob/main/gpt4all-bindings/python/README.md
+
+### scikit-llm: text classification (and other NLP tasks) with sklearn-style syntax 
+- https://github.com/iryna-kondr/scikit-llm
+- Access to both APIs and GPT4all which uses local methods.
+- Did not test wether everything works
+
+
+
+### Skorch: text classification with sklearn-style syntax 
+- Advantages: you can use sklearn functions like do GridSearchCV, predict_proba() etc. 
+- Disadvatanges: Only good for classification, not other NLP tasks
+
 
 ### Promptify
 
@@ -51,10 +72,6 @@ The package is not well maintained. The beenfit is it provides many prompts to d
 - default prompts: https://github.com/promptslab/Promptify/tree/main/promptify/prompts
 - unstructured to structured/tabular data: https://github.com/promptslab/Promptify/blob/main/notebooks/tabular.ipynb
 - topic modeling: https://github.com/promptslab/Promptify/blob/27a53fa8e8f2a4d90f887d06ece65a44466f873a/promptify/prompts/text2text/topic_modelling/topic_modeling_draft.jinja#L5
-
-### Skorch: text classification with sklearn-style syntax 
-- Advantages: you can use sklearn functions like do GridSearchCV, predict_proba() etc. 
-- Disadvatanges: Only good for classification, not other NLP tasks
 
 ### LangChain
 - Better for production/deployment
