@@ -12,7 +12,6 @@ Options:
 |----------------|----------------|----------------------|-------------------|---------------------------------|------------------------------------------|------------------------------------------------------------|
 | **LiteLLM**     | Generative AI | No                   | API               | All                             | Easy access to all APIs                 | Not sure use of Huggingface API is free                     |
 | **GPT4all**     | Generative AI | No                   | Local               | Open source (Huggingface)                             | Local and Private                 | Only uses Huggingface models which may not work well                     |
-
 | **scikit-llm**  | Many           | Yes                  | Both | Both                            | Pre-configured prompts for different tasks                   | Needs some toying around to just do simple requests, doesnt have gridsearchCV that skorch has |
 
 | **Skorch**     | Classification | No                   | Local             | Open source (Huggingface)       | Sklearn syntax and hyperparameter tuning | Only does classification                                   |
