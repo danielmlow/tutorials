@@ -27,6 +27,9 @@ Leaderboards:
 
 Summary: 
 - If you want to use GPT-4 GPT-3.5 Turbo, you might just use OpenAI API. You'll have to pay a fraction of a cent per request. But I recommend using LiteLLM since it gives you access to all APIs with the same code (just adding the corresponding API key) so you can compare APIs (e.g., OpenAI vs Google vs Cohere, etc).
+- For text classification on API models, I'd use scikit-llm.
+- For text classification on huggingface models, I might use scikit-llm which might allow for gridsearchCV or skorch which has gridsearch cv. 
+- For other tasks, I'd just use normal requests like NER I'd use litellm for API models and GPT4all for huggingface models or Hugginface's transformers package directly, and get inspirations for prompts from promptify and scikit-llm. 
 - If you want to use free open-source models and compare models you might want to use
   - gpt4all for prompts
   - scikit-llm for text classification (zero-shot, multilabel, etc) and summarization, vectors, and finetuning
@@ -34,7 +37,7 @@ Summary:
   - promptify has some additional prompts, but the package is not well maintained (tutorials haven't been updated)
   - They say Llama-2 70b HF is currently (11/3/2023) producing results similar to GPT-4; however, you'll have to figure out how to run it on a few GPUs
   - Smaller and distilled models are available on huggingface [leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard), but performance will likely decrease for now.
-- If you want to download the model locally, use skorch or openLLM which will download huggingface.
+- If you want to download the model locally, use GPT4all, skorch or openLLM which will download huggingface.
 - If you want inspirations for prompts, go to https://github.com/promptslab/Promptify/tree/main/promptify/prompts/text2text
 
 ### LiteLLM
