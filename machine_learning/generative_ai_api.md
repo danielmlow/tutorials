@@ -44,7 +44,7 @@ Summary:
 - Go to Arena (side-by-side) or Direct Chat: https://chat.lmsys.org/
 - This can help you decide if you want to try to get these running locally 
 
-## GPT4all
+### GPT4all
 - https://github.com/nomic-ai/gpt4all/blob/main/gpt4all-bindings/python/README.md
 
 ### scikit-llm: text classification (and other NLP tasks) with sklearn-style syntax 
