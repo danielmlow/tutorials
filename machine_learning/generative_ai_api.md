@@ -25,6 +25,9 @@ Leaderboards:
 - Another huggingface one: https://llm-leaderboard.streamlit.app/
 - Proprietary LLMs (not sure it is up to date): https://paperswithcode.com/sota/multi-task-language-understanding-on-mmlu
 
+Data comparison:
+- https://blog.allenai.org/dolma-3-trillion-tokens-open-llm-corpus-9a0ff4b8da64
+
 Summary: 
 - If you want to use GPT-4 GPT-3.5 Turbo, you might just use OpenAI API. You'll have to pay a fraction of a cent per request. But I recommend using LiteLLM since it gives you access to all APIs with the same code (just adding the corresponding API key) so you can compare APIs (e.g., OpenAI vs Google vs Cohere, etc).
 - For text classification on API models, I'd use scikit-llm.
