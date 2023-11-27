@@ -1,7 +1,9 @@
 
 # How to create a conda virtual environment
 
-Install miniconda (usually pkg version is easiest): https://docs.conda.io/en/latest/miniconda.html 
+Install 
+- miniconda (which only comes with the installer, usually pkg version is easiest): https://docs.conda.io/en/latest/miniconda.html
+- or anaconda (which comes with many packages pre-installed): https://conda.io/projects/conda/en/latest/user-guide/install/index.html
 
 In a terminal, run the following replacing env_name to something meaningful for this project (I recommend short names because you will be typing it a lot): 
 
@@ -11,7 +13,7 @@ To use:
 
 `conda activate env_name` # activate each time you start a new terminal
 
-`conda install plotly` # install another package 
+`conda install -y plotly` # install another package 
 
 `pip install another_package` # install another package using pip if not available on conda
 
