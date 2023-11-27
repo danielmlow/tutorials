@@ -1,9 +1,11 @@
 
 # How to create a conda virtual environment
 
-Install 
+Install miniconda or anaconda (both won't work in the same computer)
 - miniconda (which only comes with the installer, usually pkg version is easiest): https://docs.conda.io/en/latest/miniconda.html
 - or anaconda (which comes with many packages pre-installed): https://conda.io/projects/conda/en/latest/user-guide/install/index.html
+
+Full instructions: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands 
 
 In a terminal, run the following replacing env_name to something meaningful for this project (I recommend short names because you will be typing it a lot): 
 
