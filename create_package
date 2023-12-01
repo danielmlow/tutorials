@@ -1,0 +1,14 @@
+
+0. Follow steps: https://fpgmaas.github.io/cookiecutter-poetry/tutorial/
+1. Install homebrew: https://brew.sh/
+2. Set up homebrew:
+  ```
+  echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zprofile
+  eval $(/opt/homebrew/bin/brew shellenv)
+    
+  ```
+3. install pyenv
+  ```
+  brew update
+  brew install pyenv
+  ```
