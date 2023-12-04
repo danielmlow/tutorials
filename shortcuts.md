@@ -3,7 +3,7 @@
 - Execute Cell and Select Below: `cmd+enter`
 
 ## In interactive mode (runs higlighted text or line in Python/R console)
-- run selection or line: `cmd + enter`
+- Jupyter: run selection/line in Interactive Window: `cmd + enter`
 - toggle comment: `cmd + /`
 - end of line: `cmd + →`
 - start of line: `cmd + ←`
