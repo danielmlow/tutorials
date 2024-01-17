@@ -7,6 +7,24 @@
 Quick and dirty tutorials and templates 
 
 
+
+
+# Text and NLP processing in `text/`
+
+Example (there are more): `sentiment_analysis_emotion.ipynb`
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/text/sentiment_analysis_emotion.ipynb)
+
+
+
+# Machine learing in `machine_learning/`
+
+Example (there are more): 
+`classifier.ipynb`
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/machine_learning/classifier.ipynb)
+
+
+
+
 # Template files
 - `template.ipynb` [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/template.ipynb) 
 - `template.py`
@@ -62,44 +80,9 @@ python3 email_send.py --path_to_dataframe=path/to/dataframe.csv
 ```
 
 
-# Speech processing in `speech/`
-
-## Convert mp3 to other format
-pip3 install pydub
-python3 convert_mp3.py --input_dir='data/input/ --output_dir= --output_format=wav --output_bitrate=32k
-
-
-## Downsample sampling rate 
-Most speech occurs below 8kHz. Therefore downsampling to 16kHz is enough to capture most speech-related frequencies and information (see Nyquist rate). Many algorithms require samples to be at 16kHz (for faster processing or normalization across samples) while many recordings are done at 22 or 44kHz.
-
-```
-sh downsample_16khz.sh
-```
-
-
-## Automatic speech recognition (ASR)
-`asr.ipynb` uses SpeechBrain models 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/speech/asr.ipynb)
-
-
-
-## Speech Activity Detection
-`speech_activity_detection_pyannote.ipynb` detects and plots speech and silences using Pyannote package. You can use recordings in `data/input/audio_samples` to test [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/speech/speech_activity_detection_pyannote.ipynb) 
-
-
-## Speech-shaped noise
-
-`speech_shaped_noise.ipynb` As a control for speech. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/speech/speech_shaped_noise.ipynb)
-
-
-## Extract OpenSmile eGeMAPS features
-`extract_opensmile_features.ipynb` [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/speech/extract_opensmile_features.ipynb)
-
-
-
-
 
 ## Annotations
+
 
 #### Annotations - Colab option
 `audio_annotation.ipynb` is a Colab approach. 
@@ -119,20 +102,27 @@ python3 annotation.py --input_dir=data/input/vfp_audios_16khz/ --output_dir=data
 ```
 
 
-# Text and NLP processing in `text/`
-
-`sentiment_analysis_emotion.ipynb`
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/text/sentiment_analysis_emotion.ipynb)
-
-`find_closest_word.ipynb`
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/text/find_closest_word.ipynb)
+# Speech processing in `speech/`
 
 
 
-# Machine learing in `machine_learning/`
+## Convert mp3 to other format
+pip3 install pydub
+python3 convert_mp3.py --input_dir='data/input/ --output_dir= --output_format=wav --output_bitrate=32k
 
-`classifier.ipynb`
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/machine_learning/classifier.ipynb)
+
+## Downsample sampling rate 
+Most speech occurs below 8kHz. Therefore downsampling to 16kHz is enough to capture most speech-related frequencies and information (see Nyquist rate). Many algorithms require samples to be at 16kHz (for faster processing or normalization across samples) while many recordings are done at 22 or 44kHz.
+
+```
+sh downsample_16khz.sh
+```
+
+## Speech Activity Detection
+`speech_activity_detection_pyannote.ipynb` detects and plots speech and silences using Pyannote package. You can use recordings in `data/input/audio_samples` to test [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/speech/speech_activity_detection_pyannote.ipynb) 
+
+## Extract OpenSmile eGeMAPS features
+`extract_opensmile_features.ipynb` [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/tutorials/blob/main/speech/extract_opensmile_features.ipynb)
 
 
 
