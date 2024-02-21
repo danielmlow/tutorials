@@ -1,0 +1,24 @@
+
+squeue --user <username>
+
+show last jobs (completed and failed): `sacct`
+
+Check for memory efficiency: `seff <jobid>`
+
+
+
+#!/bin/bash
+#SBATCH --job-name=parselmouth
+#SBATCH --output=/om2/user/dlow/job_logs/job_%j.out
+#SBATCH --output=/om2/user/dlow/slurm/slurm-%A.out
+#SBATCH --error=/om2/user/dlow/job_logs/job_%j.err
+#SBATCH --mem=10Gb
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=15
+#SBATCH --time=48:00:00
+#SBATCH --mail-user=<username>@mit.edu
+#SBATCH --mail-type=ALL 
+
+source activate /om2/user/dlow/anaconda/envs/blake
+
+srun python /home/dlow/datum/blake/preprocessing/Speech_Feature_Extraction_Suprasegmental.py
