@@ -15,11 +15,7 @@ Figure out what type of GPU you need: `sinfo -p normal -N -o "%f %G"`
 
   `srun -N1 -t 2:00:00 --gres=gpu:QUADRORTX6000:1 --pty bash`
 
-  If you need to load a version of CUDA: `module load openmind8/cuda/12.1`
-
-
-`srun -N1 -t 2:00:00 --gres=gpu:QUADRORTX6000:1 --pty bash`
-
+  If you need to load a version of CUDA: `module load openmind8/cuda/11.7`
 
   Or run a CPU:
 
@@ -27,8 +23,10 @@ Figure out what type of GPU you need: `sinfo -p normal -N -o "%f %G"`
 
 3. conda activate `your_virtual_environment_name`
 
+  Example: `conda activate rallypoint_stb_detector`
 
-4. Run jupyter
+
+5. Run jupyter
 
   `jupyter notebook --ip=0.0.0.0 --port=9000 --no-browser`
 
@@ -42,7 +40,7 @@ Figure out what type of GPU you need: `sinfo -p normal -N -o "%f %G"`
 
   `ssh -L <host_number>:node<node>:9000 <username>@openmind.mit.edu`
   
-  Example: `ssh -L 1333:node080:9000 dlow@openmind.mit.edu`
+  Example: `ssh -L 1333:node081:9000 dlow@openmind.mit.edu`
 
   You can add a host number like 1333 or a new one if another one is already active. 
 
