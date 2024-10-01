@@ -7,6 +7,8 @@
 Quick and dirty tutorials and templates 
 
 
+Here are some examples (go into directories for more):
+
 
 
 # Text and NLP processing in `text/`
