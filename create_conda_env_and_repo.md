@@ -97,6 +97,9 @@ bash create_venv_repo.sh my_env_name my_repo_name
 ```
 
 # Delete venvs and repos
+
+
+
 Conda venv: 
 ```
 conda env list 
@@ -112,6 +115,68 @@ gh auth refresh -h github.com -s delete_repo
 - Delete:
 ```
 gh repo delete danielmlow/test4 --confirm
+```
+
+## Script to automatically delete project
+```
+#!/bin/bash
+
+# Enable debugging to print each command
+set -x
+
+# Check if the required argument is provided
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <env_name> [repo_name]"
+  exit 1
+fi
+
+# Assign the first argument to ENV_NAME
+ENV_NAME=$1
+
+# If only one argument is provided, set REPO_NAME to the same as ENV_NAME
+if [ $# -eq 1 ]; then
+  REPO_NAME=$ENV_NAME
+else
+  REPO_NAME=$2
+fi
+
+# Show user what will happen
+echo "This will remove the following:"
+echo "- Local directory '$REPO_NAME'"
+echo "- Conda environment '$ENV_NAME'"
+echo "- GitHub repository 'danielmlow/$REPO_NAME'"
+
+# List files in the local directory
+echo "Listing files in the local directory '/Users/danielmlow/code/$REPO_NAME':"
+ls -la "/Users/danielmlow/code/$REPO_NAME"
+
+echo "Listing files in the local directory '/Users/danielmlow/code/$REPO_NAME/data':"
+ls -la "/Users/danielmlow/code/$REPO_NAME/data"
+
+echo "Listing files in the local directory '/Users/danielmlow/code/$REPO_NAME/data/input':"
+ls -la "/Users/danielmlow/code/$REPO_NAME/data/input"
+
+# Ask for confirmation
+read -p "Review files Are you sure you want to proceed? (y/n): " CONFIRMATION
+
+if [[ "$CONFIRMATION" != "y" && "$CONFIRMATION" != "Y" ]]; then
+  echo "Operation cancelled."
+  exit 0
+fi
+
+# Step 1: Remove the local directory
+echo "Removing local directory '$REPO_NAME'..."
+rm -rf "/Users/danielmlow/code/$REPO_NAME"
+
+# Step 2: Remove the Conda environment
+echo "Removing Conda environment '$ENV_NAME'..."
+conda env remove --name "$ENV_NAME"
+
+# Step 3: Delete the GitHub repository
+echo "Deleting GitHub repository 'danielmlow/$REPO_NAME'..."
+gh repo delete "danielmlow/$REPO_NAME" --confirm
+
+echo "Deletion completed!"
 ```
 
 
