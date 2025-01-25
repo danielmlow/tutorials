@@ -9,7 +9,7 @@ Full instructions: https://conda.io/projects/conda/en/latest/user-guide/tasks/ma
 
 In a terminal, run the following replacing env_name to something meaningful for this project (I recommend short names because you will be typing it a lot): 
 
-`conda create -y -n env_name python=3.10 pandas numpy scikit-learn seaborn matplotlib jupyterlab`
+`conda create -y -n env_name python=3.11 ipywidgets`
 
 To use: 
 
@@ -17,7 +17,7 @@ To use:
 
 `conda install -y plotly` # install another package 
 
-`pip install another_package` # install another package using pip if not available on conda
+`pip install another_package_name yet_another_package_name` # install another package using pip if not available on conda
 
 You can also make a template and copy it as you create other projects
 
