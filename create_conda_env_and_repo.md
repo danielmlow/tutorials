@@ -95,3 +95,24 @@ The second argument is optional. If not provided, both env and repo will be call
 ```
 bash create_venv_repo.sh my_env_name my_repo_name
 ```
+
+# Delete venvs and repos
+Conda venv: 
+```
+conda env list 
+conda env remove --name test4
+conda env list 
+```
+
+Delete repo
+- Prerequisite:
+```
+gh auth refresh -h github.com -s delete_repo
+```
+- Delete:
+```
+gh repo delete danielmlow/test4 --confirm
+```
+
+
+
