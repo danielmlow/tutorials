@@ -23,8 +23,8 @@ Put in `create_conda_env_and_repo.sh`
 set -x
 
 # Check if the required arguments are provided
-if [ $# -lt 2 ]; then
-  echo "Usage: $0 <env_name> <repo_name>"
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <env_name> [repo_name]"
   exit 1
 fi
 
