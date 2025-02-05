@@ -7,6 +7,7 @@ The best option would probably be running an opensource LLM (Lama, deepseek) loc
 These are some low-processing options:
 
 - https://pypi.org/project/presidio-anonymizer/
+- https://github.com/jftuga/deidentification
 - https://github.com/jftuga/deidentify
 - https://huggingface.co/StanfordAIMI/stanford-deidentifier-base
 - https://pypi.org/project/anonymization/
