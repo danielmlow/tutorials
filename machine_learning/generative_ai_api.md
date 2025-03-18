@@ -112,3 +112,8 @@ Each company has their own API:
 - Anthropic
 - etc
 
+
+# Train / finetune LLMs
+- https://github.com/hiyouga/LLaMA-Factory
+- Lambda cloud
+- litGPT
