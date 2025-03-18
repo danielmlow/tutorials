@@ -117,3 +117,4 @@ Each company has their own API:
 - https://github.com/hiyouga/LLaMA-Factory
 - Lambda cloud
 - litGPT
+- https://novasky-ai.github.io/posts/sky-t1/?utm_source=www.therundown.ai&utm_medium=newsletter&utm_campaign=450-reasoning-model-matches-o1&_bhlid=5ec2a25c55ec3a370bb1696fd306d9e0f5872481
