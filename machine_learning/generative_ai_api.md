@@ -30,7 +30,7 @@ Data comparison:
 - https://blog.allenai.org/dolma-3-trillion-tokens-open-llm-corpus-9a0ff4b8da64
 
 Summary: 
-- If you want to use GPT-4 or GPT-3.5 Turbo, you might just use OpenAI API. You'll have to pay a fraction of a cent per request. But I recommend using LiteLLM since it gives you access to all APIs with the same code (just adding the corresponding API key) so you can compare APIs (e.g., OpenAI vs Google vs Cohere, etc).
+- If you want to use GPT-4 or GPT-3.5 Turbo, you might just use OpenAI API. You'll have to pay a fraction of a cent per request. But I recommend using OpenRouterAI since it gives you access to all APIs with the same code (just adding an API key) so you can compare models (e.g., OpenAI vs Google vs Cohere, etc).
 - For text classification on API models, I'd use skorch or scikit-llm.
 - For text classification on huggingface models, I might use scikit-llm which might allow for gridsearchCV or skorch which has gridsearch cv. 
 - For other tasks, I'd just use normal requests like NER I'd use litellm for API models and GPT4all for huggingface models or Hugginface's transformers package directly, and get inspirations for prompts from promptify and scikit-llm. 
