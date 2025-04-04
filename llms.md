@@ -1,4 +1,15 @@
 
+# LLM API
+- openrouter: access all models using the same code
+
+
+# AI Code Assistants
+- https://www.builder.io/blog/cursor-vs-windsurf-vs-github-copilot
+
+# Designing
+- Canva: for nondesigners
+- Figma: for designers
+
 # Psychotherapy
 - Stade, E. C., Toward Responsible Development and Evaluation of LLMs in Psychotherapy
 - Stade, E. C., Stirman, S. W., Ungar, L. H., Boland, C. L., Schwartz, H. A., Yaden, D. B., ... & Eichstaedt, J. C. (2024). Large language models could change the future of behavioral healthcare: a proposal for responsible development and evaluation. NPJ Mental Health Research, 3(1), 12.
