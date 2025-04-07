@@ -2,9 +2,11 @@
 # LLM API
 - openrouter: access all models using the same code
 
-
 # AI Code Assistants
 - https://www.builder.io/blog/cursor-vs-windsurf-vs-github-copilot
+
+# AI Agents
+- https://generalagents.com/ace/
 
 # Designing
 - Canva: for nondesigners
