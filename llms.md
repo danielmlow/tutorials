@@ -13,6 +13,7 @@
 - Figma: for designers
 
 # Psychotherapy
+- First RCT for psychotherapy: Heinz, M. V., Mackin, D. M., Trudeau, B. M., Bhattacharya, S., Wang, Y., Banta, H. A., ... & Jacobson, N. C. (2025). Randomized trial of a generative ai chatbot for mental health treatment. NEJM AI, 2(4), AIoa2400802.
 - Stade, E. C., Toward Responsible Development and Evaluation of LLMs in Psychotherapy
 - Stade, E. C., Stirman, S. W., Ungar, L. H., Boland, C. L., Schwartz, H. A., Yaden, D. B., ... & Eichstaedt, J. C. (2024). Large language models could change the future of behavioral healthcare: a proposal for responsible development and evaluation. NPJ Mental Health Research, 3(1), 12.
 - Related paper [link](https://www.nature.com/articles/s44184-024-00056-z.pdf)  
