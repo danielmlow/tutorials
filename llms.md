@@ -8,6 +8,9 @@
 # AI Agents
 - https://generalagents.com/ace/
 
+# Get Data
+- Open-source: Crawl website with LLM: https://github.com/unclecode/crawl4ai  
+
 # Designing
 - Canva: for nondesigners
 - Figma: for designers
