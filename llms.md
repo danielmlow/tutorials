@@ -14,6 +14,9 @@
 # Get Data
 - Open-source: Crawl website with LLM: https://github.com/unclecode/crawl4ai  
 
+# AI and values
+- https://www.nejm.org/doi/abs/10.1056/NEJMra2214183
+
 # Designing
 - Canva: for nondesigners
 - Figma: for designers
