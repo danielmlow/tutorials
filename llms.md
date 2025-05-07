@@ -8,6 +8,9 @@
 # AI Agents
 - https://generalagents.com/ace/
 
+# AI for Scientific discovery
+- https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents
+
 # Get Data
 - Open-source: Crawl website with LLM: https://github.com/unclecode/crawl4ai  
 
