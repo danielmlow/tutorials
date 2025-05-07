@@ -17,6 +17,10 @@
 # AI and values
 - https://www.nejm.org/doi/abs/10.1056/NEJMra2214183
 
+# AI privacy 
+- Nasr et al (2023). Scalable Extraction of Training Data from (Production) Language Models. https://arxiv.org/abs/2201.10351
+- Vamosi, S., Platzer, M., & Reutterer, T. (2022). AI-based re-identification of behavioral clickstream data. arXiv preprint arXiv:2201.10351.
+
 # Designing
 - Canva: for nondesigners
 - Figma: for designers
