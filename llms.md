@@ -8,6 +8,9 @@
 # AI Agents
 - https://generalagents.com/ace/
 
+# RAG
+- https://microsoft.github.io/graphrag/ 
+
 # AI for Scientific discovery
 - https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents
 
