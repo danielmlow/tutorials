@@ -14,6 +14,9 @@
 # AI for Scientific discovery
 - https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents
 
+# Speech to text / automated speech recognition
+- fast and open source: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2 
+
 # Get Data
 - Open-source: Crawl website with LLM: https://github.com/unclecode/crawl4ai  
 
