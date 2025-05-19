@@ -31,12 +31,15 @@
 - Canva: for nondesigners
 - Figma: for designers
 
+# LLMs and Psychology
+- Mihalcea, R., Biester, L., Boyd, R. L., Jin, Z., Perez-Rosas, V., Wilson, S., & Pennebaker, J. W. (2024). How developments in natural language processing help us in understanding human behaviour. Nature Human Behaviour, 8(10), 1877-1889.
+- Stade, E. C., Stirman, S. W., Ungar, L. H., Boland, C. L., Schwartz, H. A., Yaden, D. B., ... & Eichstaedt, J. C. (2024). Large language models could change the future of behavioral healthcare: a proposal for responsible development and evaluation. NPJ Mental Health Research, 3(1), 12.
+
+
 # Psychotherapy and mental health
 - Google: Lawrence HR, Schneider RA, Rubin SB, Mataric ́ MJ, McDuff DJ, Jones Bell M. The Opportunities and Risks of Large Language Models in Mental Health JMIR Ment Health 2024;11:e59479 doi: 10.2196/59479
 - First RCT for psychotherapy: Heinz, M. V., Mackin, D. M., Trudeau, B. M., Bhattacharya, S., Wang, Y., Banta, H. A., ... & Jacobson, N. C. (2025). Randomized trial of a generative ai chatbot for mental health treatment. NEJM AI, 2(4), AIoa2400802.
 - Stade, E. C., Toward Responsible Development and Evaluation of LLMs in Psychotherapy
-- Stade, E. C., Stirman, S. W., Ungar, L. H., Boland, C. L., Schwartz, H. A., Yaden, D. B., ... & Eichstaedt, J. C. (2024). Large language models could change the future of behavioral healthcare: a proposal for responsible development and evaluation. NPJ Mental Health Research, 3(1), 12.
-- Related paper [link](https://www.nature.com/articles/s44184-024-00056-z.pdf)  
 
 # Suicide risk assessment
 - Donnelly (2025). Exploring the Potential of Large Language Models for Automated Safety Plan Scoring in Outpatient Mental Health Settings. 
