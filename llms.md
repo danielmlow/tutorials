@@ -20,6 +20,9 @@
 # Get Data
 - Open-source: Crawl website with LLM: https://github.com/unclecode/crawl4ai  
 
+# Psychedelic counselor
+- https://chatgpt.com/g/g-680126b5bc288191a17c8b01d4cc4773-psychedelic-hotline?mc_cid=f4f0eb10e7&mc_eid=bf933975ba 
+
 # AI and values
 - https://www.nejm.org/doi/abs/10.1056/NEJMra2214183
 
