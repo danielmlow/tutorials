@@ -6,6 +6,7 @@
 - https://www.builder.io/blog/cursor-vs-windsurf-vs-github-copilot
 
 # AI Agents
+- course: https://llmagents-learning.org/sp25 
 - https://generalagents.com/ace/
 
 # RAG
