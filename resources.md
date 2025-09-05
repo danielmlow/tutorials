@@ -56,7 +56,7 @@
 - More in depth: https://www.youtube.com/watch?v=KJtZARuO3JY
 - Advanced: https://www.youtube.com/watch?v=9-Jl0dxWQs8&vl=en 
 
-# LLM API
+## LLM API
 - openrouter: access all models using the same code
 
 ## LLMs and psychotherapy and mental health
