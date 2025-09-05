@@ -54,7 +54,9 @@
 ## Introduction to LLMs:
 - Brief: https://www.youtube.com/watch?v=LPZh9BOjkQs
 - More in depth: https://www.youtube.com/watch?v=KJtZARuO3JY
-- Advanced: https://www.youtube.com/watch?v=9-Jl0dxWQs8&vl=en 
+- Advanced: https://www.youtube.com/watch?v=9-Jl0dxWQs8&vl=en
+- Courses
+  - https://www.cs.cmu.edu/~mgormley/courses/10423/   
 
 ## LLM API
 - openrouter: access all models using the same code
