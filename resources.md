@@ -17,8 +17,12 @@
 - https://www.builder.io/blog/cursor-vs-windsurf-vs-github-copilot
 
 # AI Agents
+- https://docs.google.com/document/d/1rsaK53T3Lg5KoGwvf8ukOUvbELRtH-V0LnOIFDxBryE/edit?tab=t.0#heading=h.pxcur8v2qagu 
 - course: https://llmagents-learning.org/sp25 
 - https://generalagents.com/ace/
+- Examples:
+  - https://biomni.stanford.edu/
+  - 
 
 # RAG
 - https://microsoft.github.io/graphrag/ 
