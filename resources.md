@@ -11,8 +11,6 @@
 # Reducing stigma
 - World Health Organization. (2024). Mosaic toolkit to end stigma and discrimination in mental health. In Mosaic toolkit to end stigma and discrimination in mental health. https://www.who.int/europe/publications/i/item/9789289061384
 
-
-
 # AI Code Assistants
 - https://www.builder.io/blog/cursor-vs-windsurf-vs-github-copilot
 
@@ -22,7 +20,13 @@
 - https://generalagents.com/ace/
 - Examples:
   - https://biomni.stanford.edu/
-  - 
+ 
+# AI for scientific disovery
+- https://platform.futurehouse.org/
+
+# AI and humor
+- https://pln-fing-udelar.github.io/semeval-2026-humor-gen/ 
+
 
 # RAG
 - https://microsoft.github.io/graphrag/ 
