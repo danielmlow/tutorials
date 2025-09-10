@@ -27,6 +27,8 @@
 # AI and humor
 - https://pln-fing-udelar.github.io/semeval-2026-humor-gen/ 
 
+# AI sovereign, open source
+- https://publicai.co/utility
 
 # RAG
 - https://microsoft.github.io/graphrag/ 
