@@ -7,6 +7,7 @@
 
 # Design
 - Figma: modular, save section in one page and it populates everywhere. Prototype function for a demo since all pages are linked. 
+- Typst: instead of latex, https://typst.app/
 
 # Reducing stigma
 - World Health Organization. (2024). Mosaic toolkit to end stigma and discrimination in mental health. In Mosaic toolkit to end stigma and discrimination in mental health. https://www.who.int/europe/publications/i/item/9789289061384
