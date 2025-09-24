@@ -31,7 +31,8 @@
 - https://www.builder.io/blog/cursor-vs-windsurf-vs-github-copilot
 
 ### AI Agents
-- https://docs.google.com/document/d/1rsaK53T3Lg5KoGwvf8ukOUvbELRtH-V0LnOIFDxBryE/edit?tab=t.0###heading=h.pxcur8v2qagu 
+- https://docs.google.com/document/d/1rsaK53T3Lg5KoGwvf8ukOUvbELRtH-V0LnOIFDxBryE/edit?tab=t.0###heading=h.pxcur8v2qagu
+- https://github.com/aishwaryanr/awesome-generative-ai-guide/tree/main/free_courses/agentic_ai_crash_course?fbclid=IwdGRjcAMjpEFleHRuA2FlbQIxMQABHsEA62OUbsJolgJTWRpFaDSFGpStJXm_qjLqqKlDQkUgm_HXQ0h8V0dV3SWS_aem_-9JtyKNUmrCfRGb0MaoeFg
 - course: https://llmagents-learning.org/sp25 
 - https://generalagents.com/ace/
 - Examples:
@@ -102,7 +103,10 @@ Psychedelic counselor: https://chatgpt.com/g/g-680126b5bc288191a17c8b01d4cc4773-
 - Next-generation Python notebooks: https://marimo.io/ (instead of colab or jupyter lab)
 
 ### Get Data
-- Open-source: Crawl website with LLM: https://github.com/unclecode/crawl4ai  
+- Open-source: Crawl website with LLM: https://github.com/unclecode/crawl4ai
+
+### Machine learning courses
+- https://substack.com/@hodgesj/note/c-143072067?r=25ypvo&utm_medium=ios&utm_source=notes-share-action 
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------->
 # Design
