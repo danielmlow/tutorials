@@ -76,6 +76,7 @@
   - Ayers JW, Poliak A, Dredze M, Leas EC, Zhu Z, Kelley JB, et al. Comparing physician and artificial intelligence chatbot responses to patient questions posted to a public social media forum. JAMA Intern Med. 2023;183: 589–596.
   - Giorgi S, Isman K, Liu T, Fried Z, Sedoc J, Curtis B. Evaluating generative AI responses to real-world drug-related questions. Psychiatry Res. 2024;339: 116058.
 - when you control for who the person thinks is answering (AI vs human response), people prefer responses from human even if an AI model authored it (and they think it was a human): Rubin, M., Li, J. Z., Zimmerman, F., Ong, D. C., Goldenberg, A., & Perry, A. (2025). Comparing the value of perceived human versus AI-generated empathy. Nature Human Behaviour, 1-15.
+- Analyzing EMA and deep phenotyping data: https://mentalhealth.bmj.com/content/28/1/e301817#T1
 
 ### AI and psychotherapy chatbots
 - Kai AI: you chat with both a real human (on weekdays) and AI models via whatsapp or other messaging services. Audio or text. It automatically creates summaries, diaries, and dashboards. Automatically creating recommendations on what modules to work on (different subtypes of CBT, e.g., for insomnia; motivational interviewing; substance use). Use synthetic data to fine-tune SOTA models. 24/7 safety team. Constant prompt engineering to adapt to techniques and artificial therapist styles (young, shorter messages, etc).  
