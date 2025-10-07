@@ -32,6 +32,7 @@
 
 ### AI Agents
 - https://docs.google.com/document/d/1rsaK53T3Lg5KoGwvf8ukOUvbELRtH-V0LnOIFDxBryE/edit?tab=t.0###heading=h.pxcur8v2qagu
+- https://openai.com/index/introducing-agentkit/
 - https://github.com/aishwaryanr/awesome-generative-ai-guide/tree/main/free_courses/agentic_ai_crash_course?fbclid=IwdGRjcAMjpEFleHRuA2FlbQIxMQABHsEA62OUbsJolgJTWRpFaDSFGpStJXm_qjLqqKlDQkUgm_HXQ0h8V0dV3SWS_aem_-9JtyKNUmrCfRGb0MaoeFg
 - course: https://llmagents-learning.org/sp25 
 - https://generalagents.com/ace/
