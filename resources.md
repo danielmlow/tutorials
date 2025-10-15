@@ -114,7 +114,8 @@ Psychedelic counselor: https://chatgpt.com/g/g-680126b5bc288191a17c8b01d4cc4773-
 # Design
 - Typst: instead of latex, https://typst.app/
 - Canva: for nondesigners
-- Figma: for designers. modular, save section in one page and it populates everywhere. Prototype function for a demo since all pages are linked. 
+- Figma: for designers. modular, save section in one page and it populates everywhere. Prototype function for a demo since all pages are linked.
+- Miro: mind map, etc. Example: https://miro.com/app/board/uXjVKqp1I6U=/ 
 
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------->
