@@ -64,6 +64,10 @@
 ### LLM and GPT style of writing
 - Over-use of the em dash: https://www.nytimes.com/2025/09/18/magazine/chatgpt-dash-hyphen-writing-communication.html?smid=nytcore-ios-share&referringSource=articleShare
 
+### Dashboards
+- grafana: good for monitoring time series and complex hardware or servers
+
+
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------->
 
 # AI, LLMs, and psychology/mental health
