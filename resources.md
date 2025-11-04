@@ -95,6 +95,9 @@ The problem of sychophancy (over-agreeing and not challenging enough): 
 - Sharma, M., Tong, M., Korbak, T., Duvenaud, D., Askell, A., Bowman, S. R., ... & Perez, E. (2023). Towards understanding sycophancy in language models. arXiv preprint arXiv:2310.13548.
 - Malmqvist, L. (2025, June). Sycophancy in large language models: Causes and mitigations. In Intelligent Computing-Proceedings of the Computing Conference (pp. 61-74). Cham: Springer Nature Switzerland.
 
+### AI companions
+- https://arxiv.org/abs/2508.19258
+
 ### Deployed Mental health chatbots
 - Psychedelic counselor: https://chatgpt.com/g/g-680126b5bc288191a17c8b01d4cc4773-psychedelic-hotline?mc_cid=f4f0eb10e7&mc_eid=bf933975ba 
 - Kai AI: you chat with both a real human (on weekdays) and AI models via whatsapp or other messaging services. Audio or text. It automatically creates summaries, diaries, and dashboards. Automatically creating recommendations on what modules to work on (different subtypes of CBT, e.g., for insomnia; motivational interviewing; substance use). Use synthetic data to fine-tune SOTA models. 24/7 safety team. Constant prompt engineering to adapt to techniques and artificial therapist styles (young, shorter messages, etc).
