@@ -74,8 +74,12 @@
 
 ### Assessing psychological constructs in text with LLMs
 - Low, D., Mair, P., Nock, M., & Ghosh, S. Text Psychometrics: Assessing Psychological Constructs in Text Using Natural Language Processing.
+- Törnberg, P. ChatGPT-4 outperforms experts and crowd workers in annotating political Twitter messages with zero-shot learning. arXiv [cs.CL] (2023).
+- Rathje, S., Mirea, D. M., Sucholutsky, I., Marjieh, R., Robertson, C. E., & Van Bavel, J. J. (2024). GPT is an effective tool for multilingual psychological text analysis. Proceedings of the National Academy of Sciences, 121(34), e2308950121.
+- Marshall, D. T. & Naff, D. B. The ethics of using artificial Intelligence in qualitative research. J. Empir. Res. Hum. Res. Ethics 19, 92–102 (2024).
 
 ### LLMs and Psychology
+- Feuerriegel, S., Maarouf, A., Bär, D., Geissler, D., Schweisthal, J., Pröllochs, N., ... & Van Bavel, J. J. (2025). Using natural language processing to analyse text data in behavioural science. Nature Reviews Psychology, 4(2), 96-111.
 - Mihalcea, R., Biester, L., Boyd, R. L., Jin, Z., Perez-Rosas, V., Wilson, S., & Pennebaker, J. W. (2024). How developments in natural language processing help us in understanding human behaviour. Nature Human Behaviour, 8(10), 1877-1889.
 - Analyzing EMA and deep phenotyping data: https://mentalhealth.bmj.com/content/28/1/e301817#T1
 
