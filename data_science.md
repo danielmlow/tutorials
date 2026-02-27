@@ -1,4 +1,8 @@
 
+# Vscode 
+- You can use colab, but eventually you'll want to switch to vscode for faster coding and debugging.
+- Make sure you use shortcuts for everything and dont click things (its too slow). Key shortcut: highlight code in a .py script and running in a second panel interactive jupyter notebook window. After installing Jupyter in VS code, map "Jupyter: Run Selection/Line in Python Interactive Window" to command enter and changed the bind of "repl.execute" to something that was NOT command enter (so that I wouldn't run this one). Then, after trying to run command enter on code, it prompted me to download the correct kernel so the code could run in the interactive window. At some point there was a mention that "runcommands" would also be bound to command enter and I'd have to reassign it, but "runcommands" wasn't assigned to command enter so I left it alone.
+
 # Setting up virtual environment in miniconda
 - https://github.com/danielmlow/tutorials/blob/main/run_python.md
 - https://github.com/danielmlow/tutorials/blob/main/virtual_environment.md
