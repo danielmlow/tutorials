@@ -1,5 +1,16 @@
 # Artificial intelligence (AI) and large language models (LLMs)
 
+### Automated prompt engineering
+- Dspy: https://github.com/stanfordnlp/dspy
+- https://www.comet.com/site/products/opik/
+
+### health / mental health benchmarks
+- https://docs.medperf.org/what_is_medperf/
+- https://research.google/blog/advancing-medical-ai-with-med-gemini/
+- https://openai.com/index/healthbench/
+- Belli, L., Bentley, K., Alexander, W., Ward, E., Hawrilenko, M., Johnston, K., ... & Chekroud, A. (2025). Vera-mh concept paper. arXiv preprint arXiv:2510.15297.  https://arxiv.org/abs/2510.15297
+- Bentley, K. H., Belli, L., Chekroud, A. M., Ward, E. J., Dworkin, E. R., Van Ark, E., ... & Hawrilenko, M. (2026). VERA-MH: Reliability and Validity of an Open-Source AI Safety Evaluation in Mental Health. arXiv preprint arXiv:2602.05088. https://arxiv.org/abs/2602.05088
+
 ### Risk
 - https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/
 
