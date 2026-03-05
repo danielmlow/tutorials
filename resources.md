@@ -14,6 +14,9 @@
 ### Risk
 - https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/
 
+### AI safety organization
+- https://partnershiponai.org/program/safety-critical-ai/
+
 ### Introduction to LLMs:
 - Brief: https://www.youtube.com/watch?v=LPZh9BOjkQs
 - More in depth: https://www.youtube.com/watch?v=KJtZARuO3JY
