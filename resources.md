@@ -11,6 +11,9 @@
 - Belli, L., Bentley, K., Alexander, W., Ward, E., Hawrilenko, M., Johnston, K., ... & Chekroud, A. (2025). Vera-mh concept paper. arXiv preprint arXiv:2510.15297.  https://arxiv.org/abs/2510.15297
 - Bentley, K. H., Belli, L., Chekroud, A. M., Ward, E. J., Dworkin, E. R., Van Ark, E., ... & Hawrilenko, M. (2026). VERA-MH: Reliability and Validity of an Open-Source AI Safety Evaluation in Mental Health. arXiv preprint arXiv:2602.05088. https://arxiv.org/abs/2602.05088
 
+### Datasets
+Daniel DiPietro, Vivek Hazari, Soroush Vosoughi (2022). Robin: A Novel Online Suicidal Text Corpus of Substantial Breadth and Scale. https://arxiv.org/abs/2209.05707
+
 ### Risk
 - https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/
 
