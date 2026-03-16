@@ -142,15 +142,17 @@ The problem of sychophancy (over-agreeing and not challenging enough): 
 ### Machine learning courses
 - https://substack.com/@hodgesj/note/c-143072067?r=25ypvo&utm_medium=ios&utm_source=notes-share-action 
 
-<!-- ----------------------------------------------------------------------------------------------------------------------------------------->
+
 # Design
 - Typst: instead of latex, https://typst.app/
 - Canva: for nondesigners
 - Figma: for designers. modular, save section in one page and it populates everywhere. Prototype function for a demo since all pages are linked.
 - Miro: mind map, etc. Example: https://miro.com/app/board/uXjVKqp1I6U=/ 
 
-
-<!-- ----------------------------------------------------------------------------------------------------------------------------------------->
+# Prototyping Apps
+- Streamlit
+- Gradio
+- https://render.com/
 
 # Mental health 
 
