@@ -4,6 +4,9 @@
 - Dspy: https://github.com/stanfordnlp/dspy
 - https://www.comet.com/site/products/opik/
 
+# AI going rogue
+- https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/ 
+
 ### health / mental health benchmarks
 - https://docs.medperf.org/what_is_medperf/
 - https://research.google/blog/advancing-medical-ai-with-med-gemini/
