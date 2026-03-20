@@ -1,5 +1,8 @@
 # Artificial intelligence (AI) and large language models (LLMs)
 
+### End to end datascience
+- https://docs.skore.probabl.ai/stable/auto_examples/index.html 
+
 ### Automated prompt engineering
 - Dspy: https://github.com/stanfordnlp/dspy
 - https://www.comet.com/site/products/opik/
