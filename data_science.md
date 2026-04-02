@@ -2,6 +2,17 @@
 # Many resources
 - https://docs.google.com/document/d/127Npk6Z2gV-p_ewwnRz7qDyvKKRI6vb6Yg3zKnOw16s/edit?usp=sharing
 
+# Python
+- Data Camp [link](https://www.datacamp.com/courses/intro-to-python-for-data-science?utm_source=google&utm_medium=paid_search&utm_campaignid=1565610606&utm_adgroupid=64773273292&utm_device=c&utm_keyword=datacamp%20python&utm_matchtype=e&utm_network=g&utm_adpostion=&utm_creative=733936254458&utm_targetid=kwd-1166778958503&utm_loc_interest_ms=&utm_loc_physical_ms=9001999&utm_content=brd~tech~python&utm_campaign=220808_1-sea~brd~branded_2-b2c_3-nam_4-rtw_5-na_6-na_7-le_8-pdsh-go_9-b-e_10-na_11-na-feb25&gad_source=1&gclid=CjwKCAiAzvC9BhADEiwAEhtlN1cFDQDFvKMEwjdPNk-8x9vvkEbBgb3SKq1Z3mXnzxZ9aQhr-bMnKBoCQUcQAvD_BwE)
+- Youtube course https://www.youtube.com/watch?v=yKi9-BfbfzQ&t=6s&ab_channel=freeCodeCampEspa%C3%B1ol 
+- https://pll.harvard.edu/course/cs50s-introduction-programming-python?delta=0
+- Intro to Python (version 3): https://www.codecademy.com/learn/learn-python-3
+- If that one at some point asks you to upgrade to Pro version, then this one should be free: Python version 2: https://www.codecademy.com/learn/learn-python
+- https://aeturrell.github.io/coding-for-economists/code-preliminaries.html
+- Pandas: 
+- https://aeturrell.github.io/coding-for-economists/data-analysis-quickstart.html
+- Interactive Colab book on Pandas, numpy, machine learning: https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.01-Introducing-Pandas-Objects.ipynb#scrollTo=a9CSUN-4sRi-
+
 # Statistics
 
 - Basic intro: https://statsthinking21.github.io/statsthinking21-core-site/
