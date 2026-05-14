@@ -71,3 +71,14 @@ for this:
 # Setting up virtual environment in miniconda
 - https://github.com/danielmlow/tutorials/blob/main/run_python.md
 - https://github.com/danielmlow/tutorials/blob/main/virtual_environment.md
+
+
+# Using LLMs to do qualitative coding
+- Tutorial: https://github.com/danielmlow/llm_course/blob/main/openrouter_api.ipynb
+
+- Workshop video (2hs): https://mindandlife.zoom.us/rec/share/MvBsiFDPoKERnJktnsLYn2UOjGynrFPUlo-tjamaO-HEOj7IeF-I7Gyk6W4lvquL.GsgMEEcFb7Lxf2j8?startTime=1761753753000
+  - Passcode: 6.#ZxEDK
+
+- Tutorials from workshop: https://github.com/danielmlow/llm_course
+
+- Codebook for 49 suicide risk factors: https://github.com/danielmlow/construct-tracker/blob/main/src/construct_tracker/data/lexicons/suicide_risk_lexicon_v1-0/suicide_risk_lexicon_codebook_prototypical_examples.txt
