@@ -82,3 +82,5 @@ for this:
 - Tutorials from workshop: https://github.com/danielmlow/llm_course
 
 - Codebook for 49 suicide risk factors: https://github.com/danielmlow/construct-tracker/blob/main/src/construct_tracker/data/lexicons/suicide_risk_lexicon_v1-0/suicide_risk_lexicon_codebook_prototypical_examples.txt
+
+- Paper explaining method (see Figure 3 on LLMs): https://osf.io/preprints/psyarxiv/9rdux_v4
